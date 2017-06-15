@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
 public class AActivity_Main extends AppCompatActivity {
     public static final String TEXT_VIEW_KEY = "com.example.kif.levelup_1_task.TEXT_VIEW_KEY";
     public static final String EXTRA_TEXT_VIEW_KEY = "com.example.kif.levelup_1_task.EXTRA_TEXT_VIEW_KEY";
@@ -62,6 +64,7 @@ public class AActivity_Main extends AppCompatActivity {
             textView_task.append(" A activity"+ System.getProperty("line.separator"));
 
             Intent I = new Intent(this, BActivity.class);
+            I.setFlags(FLAG_ACTIVITY_NEW_TASK);
             I.putExtra(EXTRA_TEXT_VIEW_KEY, textView_task.getText().toString());
             startActivity(I);
         }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LevelUp_1_task</string>
+    <string name="app_name">Base_task</string>
     <string name="action_settings">Settings</string>
     <string name="next">next</string>
     <string name="title_activity_main">A Activity</string>

@@ -47,11 +47,11 @@
         <activity android:name="com.example.kif.Lesson1_task_instantstate.DActivity"
             android:label="@string/title_activity_d"
             android:launchMode="singleTop"
-            android:parentActivityName="com.example.kif.Lesson1_task_instantstate.BActivity"
+            android:parentActivityName="com.example.kif.Lesson1_task_instantstate.CActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.kif.Lesson1_task_instantstate.BActivity" />
+                android:value="com.example.kif.Lesson1_task_instantstate.CActivity" />
         </activity>
     </application>
 

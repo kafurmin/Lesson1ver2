@@ -55,10 +55,21 @@ public class DActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id==R.id.navigates){
+            textView_task.append(" D activity"+ System.getProperty("line.separator"));
+
+            Intent upIntent = new Intent(this, AActivity_Main.class);
+            NavUtils.navigateUpTo(this, upIntent);
+
+
+        }
+
+
         if(id==android.R.id.home){
             textView_task.append(" back from D activity"+ System.getProperty("line.separator"));
-
             NavUtils.navigateUpFromSameTask(this);
+
+
         }
 
 
